@@ -10,7 +10,7 @@ namespace onctdl
     {
 
         private Node _top;
-        private int _size;
+        private int _count;
 
         public Node Top
         {
@@ -18,13 +18,13 @@ namespace onctdl
         }
         public int Count
         {
-            get { return _size; }
+            get { return _count; }
         }
 
         public Stack()
         {
             _top = null;
-            _size = 0;
+            _count = 0;
         }
 
         public void Push(int value)
@@ -39,7 +39,7 @@ namespace onctdl
                 pNew.Next = _top;
                 _top = pNew;
             }
-            _size++;
+            _count++;
         }
         public int Pop()
         {
@@ -48,7 +48,7 @@ namespace onctdl
             {
                 temp = _top.Data;
                 _top = _top.Next;
-                _size--;
+                _count--;
             }
             return temp;
         }
@@ -56,7 +56,7 @@ namespace onctdl
         {
             if (_top == null)
             {
-                throw new Exception("hang doi trong");
+                throw new Exception(" ngan xep trong");
             }
 
             return _top.Data;

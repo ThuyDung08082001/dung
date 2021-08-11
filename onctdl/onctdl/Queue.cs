@@ -44,8 +44,6 @@ namespace onctdl
             _count = 0;
         }
 
-
-
         public void EnQueue(int value)
         {
 
@@ -63,7 +61,6 @@ namespace onctdl
             }
             _count++;
         }
-
 
         public void Print()
         {
@@ -114,6 +111,5 @@ namespace onctdl
             _count--;
             return temp;
         }
-
     }
 }

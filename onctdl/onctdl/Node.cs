@@ -10,7 +10,11 @@ namespace onctdl
     {
         private int data;
         private Node next;
-        public Node(int value)// new Node(10) // [10][null]
+        public Node()
+        {
+
+        }
+        public Node(int value)
         {
             data = value;
             next = null;
